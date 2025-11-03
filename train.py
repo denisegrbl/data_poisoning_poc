@@ -178,7 +178,7 @@ def main():
         out_dir = os.path.join(args.runs_dir, args.exp_name, "samples")
         os.makedirs(out_dir, exist_ok=True)
         save_sample_images(teX, args.target_label, out_dir, trigger_size=args.trigger_size,
-                           trigger_value=args.trigger_value, trigger_loc=args.trigger_loc)
+        trigger_value=args.trigger_value, trigger_loc=args.trigger_loc)
 
     if args.save_model:
         ckpt = os.path.join(
